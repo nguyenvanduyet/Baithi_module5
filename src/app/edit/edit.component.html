@@ -1,0 +1,8 @@
+<p>edit Book!</p>
+<form>
+  <input name="title" [(ngModel)]="book.title">
+  <input name="author" [(ngModel)]="book.author" >
+  <input name="description" [(ngModel)]="book.description" >
+  <input type="submit" (click)="update()" value="Edit">
+</form>
+

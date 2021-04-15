@@ -1,0 +1,7 @@
+<p>create works!</p>
+<form>
+  <input name="title" [(ngModel)]="book.title " placeholder="Enter title">
+  <input name="author" [(ngModel)]="book.author" placeholder="Enter author" >
+  <input name="description" [(ngModel)]="book.description" placeholder="description" >
+  <input type="submit" (click)="createBook()" value="create">
+</form>

@@ -1,0 +1,25 @@
+<!--<p>home works!</p>-->
+<div class="container">
+<a [routerLink]="'create'" >CREATE BOOK</a>
+<table class="table table-striped">
+  <tr>
+    <th>STT</th>
+    <td>TITLE</td>
+    <td>AUTHOR</td>
+    <td>EDIT</td>
+    <td>DELETE</td>
+
+  </tr>
+  <tr *ngFor="let b of books, index as i">
+    <td>{{i+1}}</td>
+    <td ><a [routerLink]="'detail/'+b.id">{{b.title}}</a></td>
+    <td >{{b.author}}</td>
+    <td>
+      <a [routerLink]="'edit/'+ b.id">Edit</a>
+    </td>
+    <td>
+      <a [routerLink]="'delete/'+b.id" >Delete</a>
+    </td>
+  </tr>
+</table>
+</div>
